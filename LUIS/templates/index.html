@@ -1,3 +1,5 @@
+{% extends 'base.html'%}
+{% block content %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,10 +11,12 @@
 <body>
     <form action="registered" method="post">
         {% csrf_token %}
-        First Name  <input type="text" name ="fn" placeholder="Enter Your First Name" ><br><br>
-        Last Name   <input type="text" name ="ln" placeholder="Enter Your Last Name" ><br><br>
+        Vorname  <input type="text" name ="fn" placeholder="Enter Your First Name" ><br><br>
+        Nachname   <input type="text" name ="ln" placeholder="Enter Your Last Name" ><br><br>
 <br><br>
                     <input type="submit" value="Submit">
     </form>
 </body>
 </html>
+</html>
+{% endblock %}
